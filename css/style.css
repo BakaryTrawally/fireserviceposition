@@ -164,10 +164,10 @@ h1{
 }
 
 /* chat css */
-.container__button button {
+/* .container__button button {
     width: auto;
     padding: 0.5rem 1rem;
-}
+} */
 
 .container__fireTender{
     background-color: aliceblue;
