@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* || VARIABLE */
+:root{
+    /* FONT */
+    --FF: "Nunito", sans-serif;
+    --FF-HEADINGS: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+
+        /* COLORS */
+    --BGCOLOR-FADE: rgb(252, 2209, 160);
+    --BGCOLOUR: orange;
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOUR), var(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #FFF;
+    --BORDER-COLOR: #333;
+    --BORDER-RADIUS: 15px;
+    --BORDERS: 1px solid var(--BORDER-COLOR);
+    --BUTTON-COLOR: #FFF;
+    --BUTTON-BGCOLOR: #000;
+    --FONT-COLOR: #000;
+    --HEADER-BGCOLOR: #fff;
+    --HEADER-COLOR: black;
+    --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
+    --HERO-COLOR: #fff;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-ACTIVE: orange;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+    --NAV-BGCOLOR: #FFF;
+    --PADDING-SIDE: 2.5%;
+    --PADDING-TB: 0.25EM;
+    /* BORDERS */
+    /* STANDARD PADDINGS */
+}
+
+h1{
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container{
+    position: relative;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    max-width:810px;
+    width: 808px; 
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 300px;
+    padding: 30px 0;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px gray;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center; 
+    margin: auto;
+}
+
+
+
+
+.container__flight{
+    margin-bottom: 2rem;
+}
+  
+
+.container__flight img{
+    border: 2px solid grey;
+    border-radius: 100px;
+    box-shadow: -1px 3px 18px rgb(139, 136, 136);
+} 
+
+
+.fire__station{
+    width: 40%;
+    height: 50%;
+    margin-right: -40px;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #3a414b);
+    position: absolute;
+    right: 2.8rem;
+    bottom: 150px;
+    border-radius: 3px;
+    box-shadow: 2px 3px 2px gray;
+}
+
+
+
+.fire__station__h1{
+    background-color: var(--HERO-BGCOLOR);
+    color: var(--HERO-COLOR);
+    padding: 0.25em, 0.5em;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 5px var(--BORDER-COLOR);
+    position: absolute;
+    top: -1000px;
+    left: 10px;
+    animation: showWelcome 20s ease-in-out 1s forwards;
+    border-radius: 5px;
+}
+
+@keyframes showWelcome {
+    0%{
+        top: -20px;
+        transform: skew(0deg, -5deg)
+        scaleY(0);
+    }
+    80%{
+        top: 30px;
+        transform: skew(10deg, -5deg)
+        scaleY(1.2);
+    }
+    100%{
+        top: 20px;
+        transform: skew(-10deg, -5deg)
+        scaleY(1);
+    }
+}
+
+
+.container__button{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;   
+    justify-content:space-around ;
+    position: absolute;
+    bottom: .5rem;
+    left: 10%;    
+}
+
+/* chat css */
+.container__button {
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: static;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.container__button button {
+    width: 100px;
+    background-color: rgb(172, 184, 196);
+    color: #f5f5f5;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 5px 15px gray;
+    cursor: pointer;
+}
+
+/* chat css */
+.container__button button {
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+.container__fireTender{
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.container__fireOne , .container__fireTwo, .container__fireThree{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(205, 232, 165);
+    position: absolute;
+    right: .5rem;
+    text-wrap: nowrap;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    border-top-left-radius: 30px;
+    
+}
+.container__fireOne{
+    bottom: 50%;
+    margin-bottom: .5rem;
+}
+
+.container__fireTwo{
+    bottom: 40%;
+    margin-bottom: .5rem;
+
+}
+.container__fireThree{
+    bottom: 30%;
+    margin-bottom: .5rem;
+}
+.resetBtn{
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    margin-top: -400px;
+    background-color: rgb(172, 184, 196);
+    color: aliceblue;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    border: 0;
+   cursor: pointer;
+}
+/* The Modal (background) */
+.modal, .modalDelta, .modalTanco, .modalQuebeec{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    overflow: auto; 
+    width: 25%;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    width: 100%;
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto; 
+    /* border: 1px solid #888; */
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation: animatetop 20.4s;
+    animation-duration: 20.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1};
+  }
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 0 40px;
+    background-color: #000;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+  .modal-footer {
+    padding: 10px 16px;
+    background-color:#bec5ce;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+  .modal-header {
+    padding: 12px;
+    font-size: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    background-color:  #bec5ce;
+    color: black;
+  }
+  .modal-body ul li{
+    list-style: circle;
+  }
+
+  span{
+    font-size: bold;
+    text-transform: uppercase;
+    color: antiquewhite;
+  }
+
+
+  /* responsive  */
+
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .fire__station {
+        width: 90%;
+        position: static;
+        margin: 1rem 0;
+    }
+
+    .container__fireOne,
+    .container__fireTwo,
+    .container__fireThree {
+        position: static;
+        margin: 0.5rem auto;
+    }
+
+    .modal, .modalDelta, .modalTanco, .modalQuebeec {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}

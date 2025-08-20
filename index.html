@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fire Tender Positioning</title>
+</head>
+<body>
+    <h1>Fire Tender Positioning</h1>
+    <div class="container">
+        <div class="fire__station">
+            <h1 class="fire__station__h1">Fire Station</h1>
+        </div>
+        <button class="resetBtn" onclick="resetBtn()">Back to station</button>
+        <div class="container__fireTender"> 
+            <div id="oneTruck" class="container__fireOne">
+                Fire One
+            </div>
+
+            <div id="twoTruck" class="container__fireTwo">
+                Fire Two
+            </div>
+
+            <div id="threeTruck" class="container__fireThree">
+                Fire Three
+            </div> 
+        </div>
+        <div class="container__flight">
+            <image width="200" height="200" src="./img/air..jpeg" mode="">
+        </div>
+<!-- Modal one -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1>INDIA Positioning</h1>
+    </div>
+    <div class="modal-body">  
+      <ul>
+        <li>Very effective positioning</li>
+        <li>"Scissor" effect of the jet</li>
+        <li>Complete coverage of the fuselage</li>
+        <li>Prevents blind spots</li>
+        <li>Attacking engine and exhaust fire</li>
+        <li>Penetration with water branch for rescue</li>
+        <li>Protection of evacuation paths</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <h3 id="footer"></h3>
+    </div>
+  </div>
+</div>
+<!-- Modal Tanco -->
+<div id="myModalTanco" class="modalTanco">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1>Tanco Positioning</h1>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <li>Efficient posistioning</li>
+        <li>Full fuselage coverage</li>
+        <li>Blind spots taken up by side lances</li>
+        <li>Protection of evacuation corridors and penetration for rescue</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <h3 id="footer_1"></h3>
+    </div>
+  </div>
+</div>
+<!-- Modal Delta -->
+<div id="myModalDelta" class="modalDelta">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1>Delta & Golf Positioning</h1>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <li>
+        These types of positioning, both <span>Delta</span> and <br>
+        <span>Golf</span> are used in case of intervention on propeller <br>
+        (turboprop, helicopter...) or military aircraft. (avoiding firing zones).
+        the direction of the wind should also be consider not to posistioning <br> 
+        appliance against the wind
+        </li>
+      </ul>
+    </div> 
+    </div>
+  </div>
+</div>
+<!-- Modal Delta -->
+<div id="myModalQuebeec" class="modalQuebeec">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1>Quebeec Positioning</h1>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <li>Positioning effeciency satisfactory</li>
+        <li>Complete coverage of the fuselage</li>
+        <li>Blind spots taken up by side lances</li>
+        <li>Protection of evacaution corridors and penetration for rescue</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <h3 id="footer_3"></h3>
+    </div>
+  </div>
+</div>
+      <div class="container__button"> 
+        <button 
+        onclick="
+            myMoveT1(); 
+            myMoveT2(); 
+            myMoveT3()
+            modalBtn()
+            ">India
+        </button>
+        <button 
+        onclick="
+            myMoveT1(); 
+            myMoveT2(); 
+            myMoveTanco();
+            modalBtnTanco();
+        ">Tanco
+        </button>
+        <button 
+        onclick="
+            myMoveDeltaOrGolfTwo(), 
+            myMoveDeltaOrGolfOne()
+            modalBtnDelta()"
+        >Delta
+        </button>
+        <button 
+        onclick="
+            myMoveQuebbec();
+            myMoveT3();  
+            myMoveQuebbec1()
+            modalBtnQuebeec()
+            "
+         >Quebee
+         c</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
