@@ -79,7 +79,7 @@ h1{
   
 
 .container__flight img{
-    border: 2px solid grey;
+    border: 2px solid red;
     border-radius: 100px;
     box-shadow: -1px 3px 18px rgb(139, 136, 136);
 } 
