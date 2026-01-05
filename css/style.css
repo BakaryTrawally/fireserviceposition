@@ -190,6 +190,7 @@ h1{
 .container__fireOne{
     bottom: 50%;
     margin-bottom: .5rem;
+    background-color: red;
 }
 
 .container__fireTwo{
