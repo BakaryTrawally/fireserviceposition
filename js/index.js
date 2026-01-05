@@ -240,7 +240,7 @@ function myMoveDeltaOrGolfTwo() {
    
     to {
         bottom: 170px;
-        right: 46.5%;
+        right: 47%;
         width: 80px;
         height: 30px;
         border-radius: 0;
