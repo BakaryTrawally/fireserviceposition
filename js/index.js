@@ -156,7 +156,7 @@ function myMoveTanco() {
           bottom: 85px;
           right: 59.5%;
           width:30px;
-          height: 80px;
+          height: 70px;
           border-radius: 0;
           text-wrap: wrap;
           text-align: center;
@@ -185,7 +185,7 @@ function myMoveTanco() {
           bottom: 85px;
           right: 75%;
           width:30px;
-          height: 80px;
+          height: 75px;
           border-radius: 0;
           text-wrap: wrap;
           text-align: center;
